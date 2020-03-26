@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  26 MAR 2020 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  27 MAR 2020 02:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -519,18 +519,9 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 4
 LaTeX Warning: No \author given.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
-
-./latexnotes.tex:52: Extra }, or forgotten $.
-l.52 ..._{1}}{a_{1}} \div \frac{P_{2}}{a_{2}^{*}}}
-                                                   = \frac{P_{1}}{a_{1}} \cd...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
 [1
 
@@ -538,14 +529,14 @@ deleted material, e.g., by typing `I$}'.
 Here is how much of TeX's memory you used:
  15299 strings out of 480994
  289199 string characters out of 5916032
- 527764 words of memory out of 5000000
+ 527763 words of memory out of 5000000
  30502 multiletter control sequences out of 15000+600000
  541018 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,60p,1199b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,60p,1199b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2
 019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on latexnotes.pdf (2 pages, 121233 bytes).
+Output written on latexnotes.pdf (2 pages, 125016 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream

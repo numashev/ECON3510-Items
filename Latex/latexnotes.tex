@@ -43,27 +43,38 @@
 
 \section{Symbols}
 $^{*}$ refers to foreign \\
-$\text{variable}_{1},\text{variable}_{2}$ refer to goods $1$ and $2$ \\
+$\text{variable}_{1},\text{variable}_{2}$ refers to goods $1$ and $2$ \\
 $a_{i}$ refers to labor hours required to produce good i \\
+$\text{variable}^{w}$ refers to world \\
+$s$ refers to specialized good
 
-\section{General Equations}
+\section{General Equations in Terms of Home}
 \underline{Gravity Model}: $T_{i,j} = \frac{A \times Y_{i} \times Y_{j}}{D_{i,j}}$ \\
 \underline{Wage}: $w_{1} = \frac{P_{1}}{a_{1}}$ \\
-\underline{Relative Wage}: $\frac{w}{w^{*}} = \frac{P_{1}}{a_{1}} \div \frac{P_{2}}{a_{2}^{*}}} = \frac{P_{1}}{a_{1}} \cdot  \frac{a_{2}^{*}}{P_{2}}$ \\
+\underline{Relative Wage}: $\frac{w}{w^{*}} = \frac{P_{1}}{a_{1}} \div \frac{P_{2}}{a_{2}^{*}} = \frac{P_{1}}{a_{1}} \cdot  \frac{a_{2}^{*}}{P_{2}}$ \\
+\underline{Real Wages without Trade}: $w_{1}^{r} = \frac{w_{1}}{p_{1}} = \frac{1}{a_{1}}$
+\begin{itemize}
+  \item  \underline{Note}: this is equivalent to MPL
+\end{itemize}
+\underline{Real Wages with Trade}: $w_{1}^{r1} = \frac{w_{1}}{P_{1}} = \frac{1}{a_{1}}$ wages for good 1 in terms of specialized good 1, $w_{1}^{r2} = \frac{w_{1}}{P_{2}} = \frac{1}{a_{1}} \times \frac{P_{1}^{w}}{P_{2}^{w}}$ wages for good 1 in terms of non-specialized good 2 \\
+\begin{itemize}
+  \item  \underline{Note}: make sure to use world relative price
+\end{itemize}
 \underline{Relative Productivity}: $\frac{a_{1}}{a_{1}^{*}}$ \\
 \underline{Marginal Rate of Substitution}: $MRS_{1,2} = \frac{MU_{1}}{MU_{2}} = \frac{P_{1}}{P_{2}}$ \\
 \underline{Production}: $a_{1}Q_{1} + a_{2}Q_{2} = L$ \\
-\underline{Production Possibility Frontier}: $Q_{1} = \frac{L}{a_{1}} - \frac{a_{2}}{a_{1}}$ \\
+\underline{Production Possibility Frontier}: $Q_{1} = \frac{L}{a_{1}} - \frac{a_{2}}{a_{1}}Q_{2}$ \\
 \underline{Marginal Productivity of Labor}: $MPL_{1} = \frac{1}{a_{1}}$ \\
 \underline{Opportunity Cost}: $OC_{1} = \frac{a_{1}}{a_{2}}$ \\
 \underline{Relative Price in Autarky}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}}$ \\
-\underline{Autarky Equilibrium Occurs When}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}} = \frac{Q_{2}}{Q_{1}}$ \\
+\underline{Relative Price in Free Trade}: $\frac{P_{1}}{P_{2}} = \frac{\text{total} \ Q_{1}^{*}}{\text{total} \ Q_{2}}$ where the quantity is the total produced in the economy
+\underline{Autarky Equilibrium Occurs When}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}} = MRS_{1,2}$ \\
 \underline{Closed Trade Specialization of Good 1 Occurs When}: $w_{1} = \frac{P_{1}}{a_{1}} > \frac{P_{2}}{a_{2}} = w_{2} \Rightarrow \frac{P_{1}}{P_{2}} > \frac{a_{1}}{a_{2}}$ \\
-\underline{Free Trade Specialization of Good 1 (World Price is Autarky Price) Occurs When}:
+\underline{Free Trade Specialization of Good 1 (World Price is Not Given) Occurs When}:
  \begin{gather*}
    \frac{a_{1}}{a_{2}} < \frac{a_{1}^{*}}{a_{2}^{*}} \equiv wa_{1} < w^{*}a_{1}^{*} \equiv \frac{a_{1}^{*}}{a_{1}} > \frac{w}{w^{*}}
  \end{gather*}
-\underline{Free Trade Specialization with Actual World Prices (three cases)}:
+\underline{Free Trade Specialization with World Price Given (three cases)}:
 \begin{itemize}
   \item  \underline{Case 1}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}} < \frac{a_{1}^{*}}{a_{2}^{*}}$ then foreign specializes in good 2 and home does not specialize
   \item  \underline{Case 2}: $\frac{P_{1}}{P_{2}} < \frac{a_{1}}{a_{2}} < \frac{a_{1}^{*}}{a_{2}^{*}}$ then both home and foreign specialize in good 2
