@@ -1,0 +1,211 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 3 Answers}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+From the Wage Formula: $w_{1} = \tfrac{P_{1}}{a_{1}}$ \\
+\begin{gather*}
+  P_{tv} = a_{tv}w_{tv} \\
+  P_{tv} = 0.5*12 \\
+  P_{tv} = 6
+\end{gather*}
+From the Autarky Equilibrium: $\tfrac{p_{1}}{p_{2}} = \tfrac{a_{1}}{a_{2}}$ \\
+\begin{gather*}
+  \frac{P_{TV}}{P_{c}} = \frac{a_{TV}}{a_{c}} \\
+  \frac{6}{4} = \frac{0.5}{a_{c}} \\
+  6a_{c} = 0.5*4 \\
+  a_{c} = \frac{1}{3}
+\end{gather*}
+From the Wage Formula: \\
+\begin{gather*}
+  w_{c} = \frac{P_{c}}{a_{c}} = 12
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+From Wage Formula: $w_{1} = \tfrac{P_{1}}{a_{1}}$ \\
+\begin{gather*}
+  P_{c}* = w_{c}^{*}a_{c}^{*} \\
+  \therefore P_{c} = 6
+\end{gather*}
+From the Autarky Equilibrium:  $\tfrac{P_{1}}{P_{2}} = \tfrac{a_{1}}{a_{2}}$ \\
+\begin{gather*}
+  \frac{P_{c}^{*}}{P_{tv}^{*}} - \frac{a_{c}^{*}}{a_{TV}^{*}} \\
+  \frac{6}{3} = \frac{1}{a_{TV}^{*}} \\
+  \therefore a_{tv}^{*} = 1/2
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+So we have:
+\begin{gather*}
+  \frac{P_{tv}}{P_{c}} = 1, \frac{a_{tv}}{a_{c}} = \frac{1/2}{1/3} = 1.5, \frac{a_{tv}^{*}}{a_{c}^{*}} = 0.5
+\end{gather*}
+Therefore:
+\begin{gather*}
+  \frac{a_{tv}^{*}}{a_{c}^{*}} < \frac{P_{tv}}{P_{c}} < \frac{a_{tv}}{a_{c}}
+\end{gather*}
+From the three scenarios of specialization, case 3 holds from the formula sheet holds. So home specializes in cars and foreign specializes in TVs
+
+\par \vspace{0.8em}
+\subsection{Question 4}
+
+\underline{With Trade}: \\
+Home produces cars, so its real wage in terms of cars is:
+\begin{gather*}
+  w_{1}^{r1} = \frac{w_{1}}{P_{1}} = \frac{1}{a_{1}}
+  w^{rc}_{1} = \frac{1}{a_{c}} = 3
+\end{gather*}
+Home's real wage in terms of TVs is:
+\begin{gather*}
+  w_{c}^{rtv} = \frac{1}{a_{c}} \cdot \frac{P_{c}^{w}}{P_{tv}^{w}} = 3*1 = 3
+\end{gather*}
+\underline{Without Trade}:
+\begin{gather*}
+  w_{c}^{r} = \frac{1}{a_{c}} = 3 \\
+  w_{tv}^{r} = \frac{1}{a_{tv}} = 2
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 5}
+
+\underline{With Trade}: \\
+Foreign produces cars, so its real wage in terms of TVs is:
+\begin{gather*}
+  w^{rtv*}_{tv} = \frac{1}{a_{tv}^{*}} = 2
+\end{gather*}
+Foreign's real wage in terms of cars is:
+\begin{gather*}
+  w_{TV}^{rc*} = \frac{1}{a_{c}^{*}} \cdot \frac{P_{tv}^{w*}}{P_{c}^{w*}} = 3*1 = 3 \\
+\end{gather*}
+\underline{Without Trade}:
+\begin{gather*}
+  w_{c}^{r*} = \frac{1}{a_{c}^{*}} = 1 \\
+  w_{tv}^{r*} = \frac{1}{a_{tv}^{*}} = 2
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 6}
+
+Home earns more in terms of cars and TVs
+\begin{gather*}
+  W_{c}^{RC} = 3 > w_{TV}^{rc*} = 2 \\
+  W_{c}^{RTV} = 3 > w_{TV}^{rTV*} = 2
+\end{gather*}
+
+\newpage
+
+\section{Exercise 2}
+\vspace{6mm}
+\subsection{Question 1}
+
+Production is $a_{1}Q_{1} + a_{2}Q_{2} = L$. We know in this case everything but Q so we must find it. We are told that $MRS = \tfrac{Q_{c}}{Q_{e}}$  \\
+We use our Autarky Equilibrium Conidtions:
+\begin{gather*}
+  \frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}} = MRS = Q_{c}/Q_{e}
+\end{gather*}
+\underline{For Japan}:
+\begin{gather*}
+  \frac{a_{e}^{*}}{a_{c}^{*}} = 16/1 = \frac{P_{e}^{*}}{P_{c}^{*}} = Q_{c}^{*}/Q_{e}^{*} \\
+  \therefore 16 = Q_{c}^{*}/Q_{e}^{*} \Rightarrow Q_{c}^{*} = 16Q_{e}^{*}, \ Q_{e}^{*} = \frac{1}{16}Q_{c}
+\end{gather*}
+Plugging in $Q_{c}$ into the production function we have:
+\begin{gather*}
+  a_{c}^{*}Q_{c}^{*} + a_{e}^{*}Q_{E}^{*} = L^{*} \\
+  1(16Q_{e}^{*}) + 16Q_{e} = 320 \\
+  32Q_{e}^{*} = 320 \\
+  \therefore Q_{E} = 10 \\
+  1Q_{c}^{*} + 16(\frac{1}{16}Q_{c}^{*}) = 320 \\
+  2 Q_{c}^{*} = 320 \\
+  \therefore Q_{c} = 160
+\end{gather*}
+
+\underline{For Australia}:
+\begin{gather*}
+  \frac{a_{e}}{a_{c}} = 4/4 = \frac{P_{e}}{P_{c}} = \frac{Q_{c}}{Q_{e}} \\
+  \therefore 1 = \frac{Q_{c}}{Q_{E}} \Rightarrow Q_{E} = Q_{c}
+\end{gather*}
+Plugging in $Q_{c}$ we have:
+\begin{gather*}
+  4Q_{e} + 4Q_{e} = 160 \\
+  \therefore Q_{e} = 20
+\end{gather*}
+Since $Q_{c} = Q_{E}$ it must be that $Q_{c} = 20$
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+We need to first find specialization: \\
+\underline{Computers}:
+\begin{gather*}
+  \frac{a_{c}}{a_{e}} = 1 \\
+  \frac{a_{c}^{*}}{a_{e}^{*}} = 1/16
+\end{gather*}
+Since $\tfrac{a_{c}^{*}}{a_{e}^{*}} = 1/16 < 1 = {a_{c}}{a_{e}}$ Japan specializes in computers \\
+\underline{Education}:
+\begin{gather*}
+  \frac{a_{e}}{a_{c}} = 1 \\
+  \frac{a_{e}^{*}}{a_{c}^{*}} = 16
+\end{gather*}
+Since $\tfrac{a_{e}}{a_{c}} = 1 < 16 = \tfrac{a_{e}^{*}}{a_{c}^{*}}$ Australia specializes in education \\
+\newline Now we can find production, where countries only produce their specialized goods: \\
+\underline{Japan}: $Q_{c}^{*} = 320/1 = 320$, $Q_{e}^{*} = 0$ \\
+\underline{Australia}: $Q_{c} = 0$. $Q_{e} = 160/4 = 40$ \\
+\newline Using the relative price formula we have:
+\begin{gather*}
+  \frac{P_{e}}{P_{c}} = \frac{Total \ Q_{c}}{Total \ Q_{e}} = 8
+\end{gather*}
+Since $MRS$ is the same in both countries they will have an equal share of goods consumed: \\
+\underline{Japan}: $(Q_{e}^{*}, Q_{c}^{*}) = (20, 160)$ \\
+\underline{Australia}: $(Q_{e}, Q_{c}) = (20, 160)$ \\
+\newline Notice that this consumption matches the relative price where:
+\begin{gather*}
+  8 = \tfrac{P_{e}}{P_{c}} = MRS = \tfrac{Q_{c}}{Q_{e}} = \tfrac{160}{20} = 8
+\end{gather*}
+Since we know consumption we know that Japan exports 160 computers and imports 20 education while Australia imports 160 computers and exports 20 education
+
+\end{document}
