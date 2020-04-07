@@ -1,0 +1,204 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 3 Answers}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+For autarky we have 3 Conditions:
+\begin{gather*}
+  \tfrac{P_{C}}{P_{f}} = \tfrac{Q_{C}}{4Q_{F}} \ \tag{1} \\
+  \tfrac{P_{C}}{P_{F}} = \tfrac{Q_{F}}{Q_{C}} \ \tag{2} \\
+  4Q_{4}^{2} + Q_{C}^{2} = 2000 \ \tag{3} \\
+\end{gather*}
+
+\begin{itemize}
+  \item  \underline{For Home}: from conditions (1) and (2) we have
+  \begin{gather*}
+    \tfrac{Q_{C}}{4Q_{F}} = \tfrac{P_{C}}{P_{F}} = \tfrac{Q_{f}}{Q_{C}} \\
+    \tfrac{Q_{C}}{4Q_{F}} = \tfrac{Q_{f}}{Q_{C}} \\
+    \therefore Q_{C}^{2} = 4Q_{F}^{2} \ \tag{*} \\
+  \end{gather*}
+  Plugging equation $(*)$ into our PPF we obtain the following:
+  \begin{itemize}
+    \item  \underline{For $Q_{C}$}:
+    \begin{align*}
+      Q_{C}^{2} + Q_{C}^{2} &= 2000 \\
+      Q_{C} &= \sqrt{2000/2} \\
+      Q_{C} &= 10\sqrt{10} = 31.6
+    \end{align*}
+    \item  \underline{For $Q_{F}$}:
+    \begin{align*}
+      4Q_{F}^{2} + 4Q_{F}^{2} &= 2000 \\
+      Q_{C} &= \sqrt{2000/8} \\
+      Q_{C} &= 5\sqrt{10} = 15.8
+    \end{align*}
+  \end{itemize}
+  For relative price we have from condition $(2)$ that:
+  \begin{gather*}
+    \tfrac{P_{C}}{P_{F}} = \tfrac{Q_{F}}{Q_{C}} = \tfrac{15.8}{31.6} = 0.5
+  \end{gather*}
+\end{itemize}
+
+\begin{itemize}
+  \item  \underline{For Foreign}: repeating the above for the Foreign country yields:
+  \begin{gather*}
+    Q_{F}^{*} = 31.6 \\
+    Q_{C}^{*} = 15.8 \\
+    \tfrac{P_{C}}{P_{F}} = 2
+  \end{gather*}
+
+\end{itemize}
+
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+For free trade we have that the relative price must be the same across countries, yielding the following conditions:
+\begin{align*}
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{Q_{C}}{4Q_{F}} \ &\tag{1} \\
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{(Q_{F}-X_{F})}{(Q_{C}-X_{C})} \ &\tag{2} \\
+  4Q_{F}^{2} +  Q_{C}^{2} = 2000 \ &\tag{3} \\
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{4Q_{C}^{*}}{Q_{F}^{*}} \ &\tag{4}  \\
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{(Q_{F}^{*} + X_{F})}{Q_{C}^{*} + X_{C}} \ &\tag{5} \\
+  Q_{F}^{2*} + 4Q_{C}^{*2} = 2000 \ &\tag{6} \\
+  P_{C}X_{C} + P_{F}X_{F} = 0 \ &\tag{7}
+\end{align*}
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+From conditions $(1)$ and $(2)$ we have:
+\begin{gather*}
+  \tfrac{Q_{C}}{4Q_{F}} = \tfrac{4Q_{C}^{*}}{Q_{F}^{*}}
+\end{gather*}
+Substituting in the conjecture (contained in the question) yields the relationship between the goods for Home:
+\begin{align*}
+  \tfrac{Q_{C}}{4Q_{F}} &= \tfrac{4Q_{F}}{Q_{C}} \\
+  Q_{C}^{2} &= 16 Q_{F}^{2} \ \tag{*} \\
+  Q_{C} &= 4Q_{F} \ \tag{**}
+\end{align*}
+Substituting equation $(**)$ into (1) gives us the relative price:
+\begin{gather*}
+  \tfrac{P_{CW}}{P^{FW}} = \tfrac{4Q_{F}}{4Q_{F}} = 1
+\end{gather*}
+Substituting equation $(*)$ into our PPF conditiong $(3)$ gives us the quantity of food prroduced:
+\begin{align*}
+  4Q_{F}^{2} +  Q_{C}^{2} &= 2000 \\
+  4Q_{F}^{2} + 16Q_{F}^{2} &= 2000 \\
+  Q_{F}^{2} &= 100 \\
+  Q_{F} &= 10
+\end{align*}
+Since by equation $(**)$ we have that $Q_{C} = 4Q_{F}$, we know that:
+\begin{gather*}
+  Q_{C} = 4 \times 10 = 40
+\end{gather*}
+For the foreign quantities produced, since $Q_{C} = Q_{F}^{*}$  and $Q_{F} = Q_{C}^{*}$, it must be that:
+\begin{gather*}
+  Q_{F}^{*} = 40 \\
+  Q_{C}^{*} = 10
+\end{gather*}
+Given our relative price we have that $P_{C}^{W} = P_{F}^{W}$, this allows us to take out prices from condition $(7)$ by division, yielding:
+\begin{gather*}
+  X_{C} + X_{F} = 0 \\
+  X_{F} = -X_{C} \ \tag{***}
+\end{gather*}
+Using that $(Q_{C} = 4Q_{F})$, $(X_{F} = -X_{C})$, and $(P_{C}^{W}/P_{F}^{W} =1)$, we can use condition $(2)$ to solve for $X$:
+\begin{align*}
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} &= \tfrac{(Q_{F}-X_{F})}{(Q_{C}-X_{C})} \\
+  1 &= (Q_{F} - X_{F})/(4Q_{F} + X_{F}) \\
+  4Q_{F} + X_{F} &= Q_{F} - X_{F} \\
+  2X_{F} &= -3Q_{F} \\
+  \therefore X_{F} &= -(\tfrac{3}{2})Q_{F} \\
+  \therefore X_{C} &= (\tfrac{3}{2})Q_{F} \ \tag{****}
+\end{align*}
+Using the quantities that we solved for, i.e. $Q_{C} = 40$ and $Q_{F} = 10$, by equation $(****)$ we have:
+\begin{gather*}
+  X_{C} = \tfrac{3}{2}Q_{F} = \tfrac{3}{2}(10) = 15
+\end{gather*}
+By equation $(***)$ we have:
+\begin{align*}
+  X_{F} &= -X_{C} \\
+  \therefore X_{F} &= -15
+\end{align*}
+
+\newpage
+
+\section{Exercise 2}
+\vspace{6mm}
+\subsection{Question 1}
+
+We have:
+\begin{align*}
+  OC_{C} &= Q_{C}/4Q_{F} \\
+  OC_{C}^{*} &= 4Q_{C}^{*}/Q_{F}^{*}
+\end{align*}
+Therefore, the opportunity cost depends on the quantities produced and so from the PPF it is not immediately clear who has a comparative advantage
+However, if we look at the case under autarky quantities we can calculate the opportunity cost as:
+\begin{align*}
+  OC_{C} &= 31.6/(4*15.8) = 1/2 \\
+  OC_{C}^{*} &= (4*15.8)/31.6 = 2
+\end{align*}
+Therefore, since $OC_{C} < OC_{C}^{*}$, Home will export cloth
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+See Claudio's answer sheet
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+Yes, this is true since if opportunity cost under Autarky is $OC_{C} < OC_{C}^{*}$ and Home with free trade exports 15 cloth and imports 15 food
+
+\par \vspace{0.8em}
+\subsection{Question 4}
+
+See Claudio's answer sheet
+
+\par \vspace{0.8em}
+\subsection{Question 5}
+
+Prices will be equilized
+
+\end{document}
