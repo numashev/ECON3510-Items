@@ -2,4 +2,5 @@
  International Trade Theory and Policy
 
 See folder titled "PowerPoint" for tutorial slides \
-See folder titled "Latex" for a pdf containing a formula sheet
+See folder titled "Latex" for a pdf titled 'latexnotes' containing a formula sheet and notes from my tutorial session \
+Also see the PDF 
