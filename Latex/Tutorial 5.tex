@@ -1,0 +1,242 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 5 Answers}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+
+$MPL_{F} = 200 - L_{f}, MPL_{C} = 100 - 2L_{C}, L = 200$ \\
+From our equilibrium condition:
+\begin{gather*}
+  P_{C} MPL_{C} = w = P_{F}MPL_{F} \\
+  2(100 - 2L_{C}) = 1(200 - L_{F}) \\
+  200 - 4L_{C} = 200 - L_{F} \\
+  4 L_{C} = L_{F} \ \ (*)
+\end{gather*}
+Since total labor is $L_{C} + L_{F} = 200$ we can substitute (*) in for $L_{F}$ to solve for $L_{C}$:
+\begin{gather*}
+  L_{C} + 4 L_{C} = 200 \\
+  L_{C} = 40
+\end{gather*}
+By (*) since $L_{C} = 40$ it must be that:
+\begin{gather*}
+L_{F} = 4(40) = 160
+\end{gather*}
+Since we know $L_{C}$ and $L_{F}$ we know wages from using the wage formula:
+\begin{gather*}
+  w = 2(100 - 2(40)) \\
+  w = 40
+\end{gather*}
+
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+If prices double nothing change in terms of employment between sectors, however wages will double to 80. You can see this in the wage equation where:
+\begin{gather*}
+  W = 2 \times P_{1}MPL_{1}
+\end{gather*}
+However in the equilibrium equation we have:
+\begin{gather*}
+  2 \ times P_{1} MPL_{1} = 2 \times P_{2} MPL_{2}
+\end{gather*}
+So the multiplication by 2 cancels out and the equilibrium equation for employment does not change
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+The price for one good in our equilibrium condition changes so we have
+\begin{gather*}
+  2(100 - 2L_{C}) = 2(200 - L_{F}) \\
+  200 - 4L_{C} = 400 - 2L_{F} \\
+  2L_{F} = 200 + 4L_{C} \\
+  L_{F} = 100 + 2L_{C} \ \ (**)
+\end{gather*}
+Since $L_{C} + L_{F} = 200$, using (**) we have:
+\begin{gather*}
+  L_{C} + L_{F} = 200 \\
+  L_{C} + 100 + 2L_{C} = 200 \\
+  3L_{C} = 100 \\
+  L_{C} = 100/3
+\end{gather*}
+Using (**) again we have:
+\begin{gather*}
+  L_{F} = 100 + 2(100/3) = 500/3 = 166.666
+\end{gather*}
+Again using the wage formula:
+\begin{gather*}
+  W = P_{C}MPL_{C} \\
+  W = 2(100 - 2L_{C}) \\
+  W = 2(100 - 2(100/3)
+\end{gather*}
+
+
+\section{Exercise 2}
+\vspace{6mm}
+\subsection{Question 1}
+
+Using that $MPL_{L} = \tfrac{\partial Q_{C}}{\partial L_{C}}$ we have:
+\begin{gather*}
+  Q_{C} = 4L_{C}^{0.5} \\
+  MPL_{C} = 2L_{C}^{-0.5} \\
+  MPL_{C} = \tfrac{2}{\sqrt{L_{C}}} = \tfrac{2}{L_{C}^{0.5}}
+\end{gather*}
+Similarly for food:
+\begin{gather*}
+  Q_{F} = 2L_{F}^{0.5} \\
+  MPL_{F} = 1LF^{-0.5} \\
+  MPL_{F} = \tfrac{1}{\sqrt{L_{F}}} = \tfrac{1}{L_{F}^{0.5}}
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+From our OC Formula:
+\begin{gather*}
+  OC_{C} = \tfrac{1}{LF^{0.5}} / \tfrac{2}{L_{C}^{0.5}} \\
+  OC_{C} = \tfrac{1}{L_{F}^{0.5}} \times \tfrac{L_{C}^{0.5}}{2} \\
+  OC_{C} = \tfrac{L_{C}^{0.5}}{2L_{F}^{0.5}}
+\end{gather*}
+Our production function for quantity equations were:
+\begin{gather*}
+  Q_{C} = 4L_{C}^{0.5} \Rightarrow L_{C}^{0.5} = \tfrac{Q_{C}}{4} \\
+  Q_{F} = 2L_{F}^{0.5} \Rightarrow L_{F}^{0.5} = \tfrac{Q_{F}}{2}
+\end{gather*}
+Now we can substitute in L for Q in the OC equation to get:
+\begin{gather*}
+  OC_{C} = \tfrac{Q_{C}}{4} / 2(\tfrac{Q_{F}}{2})  \\
+  OC_{C} = \tfrac{Q_{C}}{4Q_{F}}
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+Assuming $L_{C} = 125$ or $L_{F} = 125$ we get the following maximum quantities:
+\begin{gather*}
+  Q_{C} = 4(125)^{0.5} = 44.72 \\
+  Q_{F} = 2(125)^{0.5} = 22.36
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 4}
+
+We use the following $PFQ_{C}, PFQ_{F}$, and $L$ equations to solve for the PPF:
+\begin{gather*}
+  (1) \ \ Q_{C} = 4L_{C}^{0.5} \Rightarrow L_{C} = \tfrac{Q_{C}^{2}}{16} \\
+  (2) \ \ Q_{F} = 2L_{F}^{0.5} \Rightarrow L_{F} = \tfrac{Q_{F}^{2}}{4} \\
+  (3) \ \ L_{F} + L_{C} = 125
+\end{gather*}
+Substituting equations (1) and (2) into (3) yields:
+\begin{gather*}
+  \tfrac{Q_{F}^{2}}{4} + \tfrac{Q_{C}^{2}}{16} = 125 \\
+  Q_{F}^{2} + \tfrac{Q_{C}^{2}}{4} = 500 \\
+  4Q_{F}^{2} + Q_{C}^{2} = 2000
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 5}
+
+We have that $OC_{C}^{*} = \tfrac{4Q_{C}^{*}}{Q_{F}^{*}}, PPF^{*} = Q_{F}^{*2} + 4Q_{C}^{*2} = 2000$. Our equilibrium conditions under free trade are:
+\begin{gather*}
+  (1) \ \ \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{Q_{C}}{4Q_{F}} \\
+  (2) \ \ \tfrac{P_{C}^{W}}{P_{F}^{W}} = (Q_{F} - X_{F})/(Q_{C} - X_{C}) \\
+  (3) \ \ 4Q_{F}^{2} + Q_{C}^{2} = 2000 \\
+  (4) \ \ \tfrac{P_{C}^{W}}{P_{F}^{W}} = 4 \tfrac{Q_{C}^{*}}{Q_{F}^{*}} \\
+  (5) \ \ \tfrac{P_{C}^{W}}{P_{F}^{W}} = (Q_{F}^{*} + X_{F})/(Q^{*}_{C} + X_{C}) \\
+  (6) \ \ Q_{F}^{*2} + 4Q_{C}^{*2} = 2000 \\
+  (7) \ \ P_{C}X_{C} + P_{F}X_{F} = 0 \\
+\end{gather*}
+
+\underline{Quantities} \\
+From conditions (1) and (4) we have:
+\begin{gather*}
+  \tfrac{Q_{C}}{4Q_{F}} = \tfrac{4Q_{C}^{*}}{Q_{F}^{*}} \\
+  \text{Since } Q_{C}^{*} = Q_{F} \text{ (and vice versa) we have:} \\
+  \tfrac{Q_{C}}{4Q_{F}} = \tfrac{4Q_{F}}{Q_{C}} \\
+  \therefore Q_{C}^{2} = 16Q_{F}^{2} \ \ (*)  \\
+  \therefore Q_{C} = 4Q_{F} \ \ (**)
+\end{gather*}
+Solving for quantities by using (*) in (3) we have:
+\begin{gather*}
+  4Q_{F}^{2} + Q_{C}^{2} = 2000 \\
+  4Q_{F}^{2} + 16Q_{F}^{2} = 2000 \\
+  20Q_{F}^{2} = 2000 \\
+  Q_{F}^{2} = 100 \\
+  \therefore Q_{F} = 10 \Rightarrow Q_{C}^{*} = 10
+\end{gather*}
+Using $Q_{F} = 10$ in condition (3) we have the following:
+\begin{gather*}
+  4(10)^{2} + Q_{C}^{2} = 2000 \\
+  Q_{C}^{2} = 1600 \\
+  \therefore Q_{C} = 40 \Rightarrow Q_{F}^{*} = 40
+\end{gather*}
+
+\underline{World Relative Price} \\
+Substituting (**) into condition (1) gives us the world relative price:
+\begin{gather*}
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = \tfrac{4Q_{F}}{4Q_{F}} = 1 \\
+  \text{Since } \tfrac{P_{C}^{W}}{P_{F}^{W}} = 1 \text{ we know from (7):} \\
+  X_{F} = -X_{C} \ \ (***)
+\end{gather*}
+
+\underline{Exports} \\
+Plugging equation (***) into condition (2) we can solve for exports:
+\begin{gather*}
+  \tfrac{P_{C}^{W}}{P_{F}^{W}} = (Q_{F} - X_{F})/(Q_{C} - X_{C}) \\
+  1 = (Q_{F} - X_{F})/(4Q_{F} + X_{F}) \\
+  4Q_{F} + X_{F} = Q_{F} - X_{F}  \\
+  3Q_{F} = -2X_{F} \\
+  -X_{F} = (\tfrac{3}{2})Q_{F}
+\end{gather*}
+Since $Q_{F} = 10$ we have:
+\begin{gather*}
+  -X_{F} = (\tfrac{3}{2})Q_{F} = (\tfrac{3}{2})10 = 15 \\
+  \therefore -X_{F} = 15 \\
+  \therefore X_{C} = 15
+\end{gather*}
+
+\underline{Summary}:$ Q_{F} = 10, Q_{C} = 40, Q_{F}^{*} = 40, Q_{C}^{*} = 10, \tfrac{P_{C}^{W}}{P_{F}^{W}} = 1, -X_{F} = 15, X_{C} = 15$
+
+
+\end{document}
