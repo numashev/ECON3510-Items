@@ -61,9 +61,18 @@ $PFQ$ refers to the production function of Q \\
 \begin{itemize}
   \item  \underline{Note}: this is equivalent to MPL
 \end{itemize}
-\underline{Real Wages with Trade}: $w_{1}^{r1} = \frac{w_{1}}{P_{1}} = \frac{1}{a_{1}}$ wages for good 1 in terms of specialized good 1, $w_{1}^{r2} = \frac{w_{1}}{P_{2}} = \frac{1}{a_{1}} \times \frac{P_{1}^{w}}{P_{2}^{w}}$ wages for good 1 in terms of non-specialized good 2 \\
+\underline{Real Wages with Trade}: $w_{1}^{r1} = \frac{w_{1}}{P_{1}^{w}} = \frac{1}{a_{1}}$ wages for good 1 in terms of specialized good 1, $w_{1}^{r2} = \frac{w_{1}}{P_{2}^{w}} = \frac{1}{a_{1}} \times \frac{P_{1}^{w}}{P_{2}^{w}}$ wages for good 1 in terms of non-specialized good 2
 \begin{itemize}
-  \item  \underline{Note}: make sure to use world
+  \item  \underline{Note}: make sure to use world prices
+  \item  \underline{Derivation of Real Wages for Good 1 in Terms of Non-Specialized Good 2}: we have that $w_{1}^{r2} = \tfrac{w_{1}}{p_{2}^{w}}$, however we do not typically know the value of $p_{2}^{w}$. Instead, we usually only know the world price ratio $\tfrac{p_{1}^{w}}{p_{2}^{w}}$ is and so we need to find a solution for $w_{1}^{r2}$ in terms of $\tfrac{p_{1}^{w}}{p_{2}^{w}}$. Note that if we multiply both sides of our equation for $w_{1}^{r2}$ by $\tfrac{p_{1}^{w}}{p_{1}^{w}}$ we get:
+  \begin{align*}
+    w_{1}^{r2} &= \frac{w_{1}}{p_{2}^{w}} \cdot \frac{p_{1}^{w}}{p_{1}^{w}} \\
+    w_{1}^{r2} &= \frac{w_{1}}{p_{1}^{w}} \cdot \frac{p_{1}^{w}}{p_{2}^{w}} \ \tag{*}
+  \end{align*}
+  Further note that from our equation for $w_{1}^{r1}$ we know that $\tfrac{w_{1}}{p_{1}^{w}} = \tfrac{1}{a_{1}}$. Inserting this into equation (*) yields the following soluton for real wages in terms of non-specialized good 2:
+  \begin{gather*}
+    w_{1}^{r2} = \frac{1}{a_{1}} \times \frac{p_{1}^{w}}{p_{2}^{w}}
+  \end{gather*}
 \end{itemize}
 \underline{Relative Productivity}: $\frac{a_{1}}{a_{1}^{*}}$ \\
 \underline{Marginal Rate of Substitution}: $MRS_{1,2} = \frac{MU_{1}}{MU_{2}} = \frac{P_{1}}{P_{2}}$ \\
@@ -71,8 +80,8 @@ $PFQ$ refers to the production function of Q \\
 \underline{Production Possibility Frontier}: $Q_{1} = \frac{L}{a_{1}} - \frac{a_{2}}{a_{1}}Q_{2}$ \\
 \underline{Marginal Productivity of Labor}: $MPL_{1} = \frac{1}{a_{1}}$ \\
 \underline{Opportunity Cost}: $OC_{1} = \frac{a_{1}}{a_{2}}$ \\
-\underline{ in Autarky}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}}$ \\
-\underline{ in Free Trade}: $\frac{P_{1}}{P_{2}} = \frac{\text{total} \ Q_{1}^{*}}{\text{total} \ Q_{2}}$ where the quantity is the total produced in the economy
+\underline{Relative Price in Autarky}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}}$ \\
+\underline{Relative Price in Free Trade}: $\frac{P_{1}}{P_{2}} = \frac{\text{total} \ Q_{1}}{\text{total} \ Q_{2}}$ where the quantity is the total produced in the economy \\
 \underline{Autarky Equilibrium Occurs When}: $\frac{P_{1}}{P_{2}} = \frac{a_{1}}{a_{2}} = MRS_{1,2}$ \\
 \underline{Closed Trade Specialization of Good 1 Occurs When}: $w_{1} = \frac{P_{1}}{a_{1}} > \frac{P_{2}}{a_{2}} = w_{2} \Rightarrow \frac{P_{1}}{P_{2}} > \frac{a_{1}}{a_{2}}$ \\
 \underline{Free Trade Specialization of Good 1 (World Price is Not Given) Occurs When}:
@@ -88,7 +97,7 @@ $PFQ$ refers to the production function of Q \\
 
 \newpage
 
-\section{Ricardian Equations in Terms of Home}
+\section{Heckscher-Ohlin Model}
 \underline{Production Possibility Frontier}: $L = f(Q_{1}, Q_{2})$ \\
 \underline{Isovalue Line - Representing Constant Value of Production (Indifference Curves)}: $V = P_{1}Q_{1} + P_{2}Q_{2}$
 \begin{itemize}
@@ -131,7 +140,7 @@ $PFQ$ refers to the production function of Q \\
 \end{itemize}
 \underline{Heckscher-Ohlin Theorem}: the country that is abundant in a factor exports the good whose production is intensive in that factors, so countries tend to export goods whose production is invensive in factors with which countries are abundantly endowed \\
 \underline{Relative Consumption of Home}: $(Q_{1}-X_{1})/(Q_{2}-X_{2})$ \\
-\underline{Relative Consumption of Foreign}: $(Q_{1}^{*}+X_{1})/(Q_{2}^{*}+X_{2})$
+\underline{Relative Consumption of Foreign}: $(Q_{1}^{*}+X_{1})/(Q_{2}^{*}+X_{2})$ \\
 \underline{Optimality Condition under Autarchy}: optimality under autarchy requires each countries  of good 1 to equal it's opportunity cost of production of good 1 and the marginal rate of substitution in consumption of good 1, so we have three conditions:
 \begin{align*}
   \textit{Optimality in Production: }& \tfrac{P_{1}}{P_{2}} = f_{OC}(\tfrac{Q_{1}}{Q_{f}}) \\
