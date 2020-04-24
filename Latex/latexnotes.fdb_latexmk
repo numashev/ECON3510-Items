@@ -1,10 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1587289974 "latexnotes.tex" "latexnotes.pdf" "latexnotes" 1587289978
+["pdflatex"] 1587692134 "latexnotes.tex" "latexnotes.pdf" "latexnotes" 1587692140
   "Pictures/pic1.png" 1585833811 32173 41b363caa93c6a24bf10222f6e70bdae ""
   "Pictures/pic2.png" 1585834087 23276 29ef5248c85cdaf84676216a0f73e977 ""
   "Pictures/pic3.png" 1585834228 47683 b733aac2f5ba2dc4973805b0582c46a1 ""
   "Pictures/pic4.png" 1585834721 37780 cff447bc35f4886d000d7898d00ef183 ""
   "Pictures/pic5.png" 1585834933 35655 d88073d3beb2c94d29bcb1cf1c9b15b4 ""
+  "Pictures/pic6.png" 1587647523 53322 b326111ae692da4c91718dfadd1135de ""
+  "Pictures/pic7.png" 1587650468 47401 fbf3863a107d730be0f4b65adf68fa15 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1586021763 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1586029508 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1586026425 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -163,9 +165,9 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586155188 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1586155397 8274592 25049b75d5ca59982e03545b68be02a5 ""
   "c:/texlive/2019/texmf.cnf" 1586155143 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "latexnotes.aux" 1587289978 438 c2399278cde296200ddafb9763a1374e "pdflatex"
-  "latexnotes.tex" 1587289942 13940 f6b44667837e3e598d7e5ca4b750dc3a ""
+  "latexnotes.aux" 1587692139 544 cb1ed49426c971360e930c67ce6e4a06 "pdflatex"
+  "latexnotes.tex" 1587692132 18348 6590144531a699b9e39bfd24e4da09d7 ""
   (generated)
+  "latexnotes.aux"
   "latexnotes.log"
   "latexnotes.pdf"
-  "latexnotes.aux"
