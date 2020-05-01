@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 7 Answers}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+\begin{gather*}
+  AC_{CH} (Q) = D_{CH}(Q) \\
+  \frac{36}{Q+10} = 10 - Q \\
+  36 = (10 - Q) (Q + 10) \\
+  36 = 10Q + 100 - Q^{2} -10Q \\
+  Q^{2} = 64 \\
+  Q_{CH} = 8 \\
+  P = 10 - 8 = 2
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+\begin{gather*}
+  AC_{US} (Q) = D_{US}(Q) \\
+  \frac{51}{Q + 10} = 10 - Q \\
+  Q^{2} = 49 \\
+  Q_{US} = 7 \\
+  P = 10 - 7 = 3
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+World Demand is:
+\begin{gather*}
+  Q = (10 - P) + (10 - P) \\
+  Q = 20 - 2P \\
+  P = 10 - Q/2 \\
+  D^{w}(Q) = 10 - Q/2
+\end{gather*}
+Set AC equal to inverse of world demand:
+\begin{gather*}
+  AC_{CH}(Q) = D^{W}(Q) \\
+  \frac{36}{Q + 10} = 10 - Q/2 \\
+  36 = (10 - 0.5Q)(Q + 10) \\
+  -64 = 5Q - 0.5Q^{2} \\
+  \therefore 0 = -Q^{2} + 10Q + 128
+\end{gather*}
+Using quadratic formula we have:
+\begin{gather*}
+  x = \frac{-b +/- \sqrt{b^{2} - 4ac}}{2a} \\
+  Q = \frac{-10 +/- \sqrt{10^{2} - 4 \cdot -1 \cdot 128}}{2 \cdot -1} \\
+  \therefore Q = 17.369 \\
+  \therefore P = 10 - 17.369/2 = 1.32
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 4}
+
+\begin{gather*}
+  AC_{US} = D^{W}(Q) \\
+  \frac{51}{Q + 10} = 10 - Q/2 \\
+  51 = (10 - 0.5Q)(Q + 10) \\
+  \therefore 0 = -Q^{2} + 10Q + 98 \\
+  \text{Using wolfram alpha:} \\
+  Q = 16.09 \\
+  P = 10 - 16.09/2 = 1.95
+\end{gather*}
+
+\section{Exercise 2}
+\vspace{6mm}
+\subsection{Question 1}
+
+\begin{gather*}
+  Q = (5-P/2) + (5-P/2) \\
+  Q = 10 - P \\
+  \therefore D^{W}(Q) = 10 - Q \\
+  AC_{US} = D^{W}(Q) \\
+  \frac{51}{Q+10} = 10 - Q \\
+  \therefore Q = 7 \\
+  \therefore P = 3 \\
+  Q_{CH} = Q_{US} = 5 - 3/2 = 3.5
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+\begin{gather*}
+  AC_{US} = \frac{51 - 2Q_{1}}{Q + 10} = \frac{51 - 14}{Q + 10} = \frac{37}{Q + 10} > AC_{CH} = \frac{36}{Q + 10} \\
+  AC_{CH} = D^{W}(Q) \\
+  \frac{36}{Q+10} = 10 - Q \\
+  \therefore Q = 8 \\
+  \therefore P = 2 \\
+  Q_{CH} = Q_{US} = 5 - 2/2 = 1
+\end{gather*}
+
+\par \vspace{0.8em}
+\subsection{Question 3}
+
+\begin{gather*}
+  AC_{US} = \frac{51 - 3Q_{1}}{Q + 10} = \frac{51 - 21}{Q + 10} = \frac{30}{Q + 10} < AC_{CH} = \frac{36}{Q + 10}
+\end{gather*}
+Therefore the US becomes the world producer:
+\begin{gather*}
+  AC_{US} = D^{W}(Q) \\
+  \frac{30}{Q+10} = 10 - Q \\
+  30 = (10 - Q) (10 + Q) \\
+  \therefore Q = 8.37 \\
+  \therefore P = 1.63 \\
+  \therefore Q_{CH} = Q_{US} = 55 - 1.63/2 = 4.185
+\end{gather*}
+
+
+
+\end{document}
