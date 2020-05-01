@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1587692690 "latexnotes.tex" "latexnotes.pdf" "latexnotes" 1587692694
+["pdflatex"] 1588296861 "latexnotes.tex" "latexnotes.pdf" "latexnotes" 1588296865
   "Pictures/pic1.png" 1585833811 32173 41b363caa93c6a24bf10222f6e70bdae ""
   "Pictures/pic2.png" 1585834087 23276 29ef5248c85cdaf84676216a0f73e977 ""
   "Pictures/pic3.png" 1585834228 47683 b733aac2f5ba2dc4973805b0582c46a1 ""
@@ -165,9 +165,9 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586155188 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1586155397 8274592 25049b75d5ca59982e03545b68be02a5 ""
   "c:/texlive/2019/texmf.cnf" 1586155143 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "latexnotes.aux" 1587692693 544 cb1ed49426c971360e930c67ce6e4a06 "pdflatex"
-  "latexnotes.tex" 1587692132 18348 6590144531a699b9e39bfd24e4da09d7 ""
+  "latexnotes.aux" 1588296865 649 608201ba15968e434a401674fdffdc29 "pdflatex"
+  "latexnotes.tex" 1588296845 19171 68eae282f620d49f204210029dbf9ba8 ""
   (generated)
   "latexnotes.aux"
-  "latexnotes.pdf"
   "latexnotes.log"
+  "latexnotes.pdf"
