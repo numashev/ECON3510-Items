@@ -1,0 +1,220 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 8 Answers - See Claudio's Answer Guide for Text/Missing Sections}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+\begin{gather*}
+  Q = S [\frac{1}{n} - (P - AP)] \\
+  \frac{Q}{S} = \frac{1}{n} - P + AP \\
+  P = \frac{1}{n} + AP - \frac{Q}{S} \\
+  PQ = \frac{Q}{n} + AP \cdot Q + \frac{Q^{2}}{S} \\
+  \therefore MR = \frac{\partial }{ \partial Q} = \frac{1}{n} + AP - \frac{2Q}{S}  \\
+  AP = \frac{Q}{S} - \frac{1}{n} + P \\
+  MR = \frac{1}{n} + \frac{Q}{S} - \frac{1}{n} + P - \frac{2Q}{S} \\
+  MR = P - \frac{Q}{S}
+\end{gather*}
+
+Equal market share implies $Q = \frac{S}{n}$ and so:
+\begin{gather*}
+  \therefore MR = P - \frac{1}{n} \\
+  MC = \frac{\partial}{\partial Q} = 1 \\
+  \text{So to solve for PP we have:}  \\
+  MR = MC \\
+  P - \frac{1}{n} = 1 \\
+  P = 1 + \frac{1}{n} \ \ \ (PP) \\
+  AC = \frac{10}{Q} + 1
+\end{gather*}
+
+
+\vspace{6mm}
+\subsection{Question 2}
+
+Equal market share implies $Q = \frac{S}{n}$ and so:
+\begin{gather*}
+  \therefore AC = \frac{10n}{s} + 1 \\
+  P = \frac{10n}{s} + 1 \\
+  \text{For home:} \\
+  P = \frac{10n}{90} + 1 = \frac{n}{9} + 1 \ \ (CC home) \\
+  \text{For foreign:} \\
+  P = \frac{10n}{160} + 1 = \frac{n}{16} + 1 \ \ (CC foreign)
+\end{gather*}
+
+
+\vspace{6mm}
+\subsection{Question 3}
+
+Home:
+\begin{gather*}
+  PP = CC \\
+  1 + \frac{1}{n} = \frac{n}{9} + 1 \\
+  \frac{1}{n} = \frac{n}{9} \\
+  9 = n^{2} \\
+  n = 3 \\
+  P = \frac{3}{9} + 1 = 1.333
+\end{gather*}
+
+Foreign:
+\begin{gather*}
+  PP = CC \\
+  1 + \frac{1}{n} = \frac{n}{16} + 1 \\
+  18 = n^{2} \\
+  n = 4 \\
+  P = \frac{4}{16} + 1 = 1.25
+\end{gather*}
+
+
+\vspace{6mm}
+\subsection{Question 4}
+
+\begin{gather*}
+  s = 90 + 160 = 250 \\
+  CC = \frac{n}{25} + 1 \\
+  PP = CC \\
+  1 + \frac{1}{n} = \frac{n}{25} + 1 \\
+  n^{2} = 25 \\
+  n = 5
+\end{gather*}
+
+
+
+
+\section{Exercise 2}
+\vspace{6mm}
+\subsection{Question 1}
+
+As before we have that for both home and foreign
+\begin{gather*}
+  MR = P - \frac{1}{n}
+\end{gather*}
+
+MC in home is $\frac{\partial}{ \partial Q} = 2$ so PP is:
+\begin{gather*}
+  MR = MC \\
+  P - \frac{1}{n} = 2 \\
+  \therefore P = 2 + \frac{1}{n} \ \ (PP)
+\end{gather*}
+
+AC in home is:
+\begin{gather*}
+  AC = \frac{10}{Q} + 2 \\
+  AC = \frac{10n}{s} + 2
+\end{gather*}
+
+Therefore CC in home is:
+\begin{gather*}
+  CC = \frac{10n}{s} + 2 \\
+  CC = \frac{10n}{90} + 2 \\
+  CC = \frac{n}{9} + 2 \ \ (CC)
+\end{gather*}
+
+
+So we have:
+\begin{gather*}
+  CC = PP \\
+  \frac{n}{9} + 2 = 2 + \frac{1}{n} \\
+  n^{2} = 9 \\
+  n = 3 \\
+  P = 2.333
+\end{gather*}
+
+As before we have that for both home and foreign: $MR = P - \frac{1}{n}$. MC in foreign is
+\begin{gather*}
+  \frac{\partial}{\partial Q} = 3 \\
+  P = 3 + \frac{1}{n}
+\end{gather*}
+
+AC for foreign is
+\begin{gather*}
+  AC = \frac{10}{Q} + 3 \\
+  AC = \frac{10n}{s} + 3
+\end{gather*}
+
+Therefore CC in foreign is:
+\begin{gather*}
+  CC = \frac{10n}{s} + 3 \\
+  CC = \frac{10n}{160} + 3 \\
+  CC = \frac{n}{16} + 3
+\end{gather*}
+
+So we have:
+\begin{gather*}
+  CC = PP \\
+  \frac{n}{16} + 3 = 3 + \frac{1}{n} \\
+  n^{2} = 16 \\
+  n = 4 \\
+  p = 3.25
+\end{gather*}
+
+
+\par \vspace{0.8em}
+\subsection{Question 2}
+
+\begin{gather*}
+  s = 90 + 160 = 250
+\end{gather*}
+If home takes over production then CC is:
+\begin{gather*}
+  CC = \frac{n}{25} + 2 \\
+  PP = CC \\
+  2 + \frac{1}{n} = \frac{n}{25} + 2 \\
+  n^{2} = 25 \\
+  n = 5 \\
+  P = 2.2
+\end{gather*}
+
+If foreign takes over production then CC is:
+\begin{gather*}
+  CC = \frac{n}{25} + 3 \\
+  PP = CC \\
+  \frac{1}{n} + 3 = \frac{n}{25} + 3 \\
+  n = 5 \\
+  P = 3.2
+\end{gather*}
+Since $P^{*} > P$ we would expect that all production will be located in home - reflecting its lower marginal cost
+
+
+
+
+\end{document}

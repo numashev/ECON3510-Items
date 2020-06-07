@@ -1,0 +1,148 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\setlength{\parskip}{0.6em}
+
+\title{ECON3510 Tutorial 11 Answers - See Claudio's Answer Guide for Text/Missing Sections}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 1}
+\vspace{6mm}
+\subsection{Question 1}
+
+A's profit is:
+\begin{gather*}
+  \pi = (P - MC) \cdot Q_{A} = (130 - Q_{A} - Q_{B} - 10) \cdot Q_{A}
+\end{gather*}
+Taking FOC with respect to $Q_{A}$ we have:
+\begin{gather*}
+  0 = \frac{\partial \pi}{\partial Q_{A}} = (130 - Q_{A} - Q_{B}  - 10) + (-Q_{A}) \ \ \  \ \  \ (1)
+\end{gather*}
+Since the maximization problem is symmetrical for B so we have:
+\begin{gather*}
+  0 = 120 - 2Q_{B} - Q_{A} \ \ \  \ \  \  (2)
+\end{gather*}
+Setting equation (1) = (2) we get:
+\begin{gather*}
+  120 - 2Q_{A} - Q_{B} = 120 - 2Q_{B} - Q_{A} \\
+  \therefore Q_{A} = Q_{B} \ \ \ \ \ \ \ (*)
+\end{gather*}
+We can plug equation (*) into (1) to find:
+\begin{gather*}
+  0 = 120 - 2Q_{A} - Q_{B} \\
+  0 = 120 - 3Q_{A} \\
+  Q_{A} = 40 \\
+  Q_{B} = 40 \\
+  P = 130 - Q_{A} - Q_{B} = 130 - 80 = 50 \\
+  \pi_{A} = \pi_{B} = (P - MC)(Q_{A}) = (50 - 10) \cdot 40 = 1600
+\end{gather*}
+
+\vspace{6mm}
+\subsection{Question 2}
+
+A's profit is now:
+\begin{gather*}
+  \pi = (130 - Q_{A} - Q_{B} - 4) Q_{A}
+\end{gather*}
+Take FOC with respect to $Q_{A}$ we have:
+\begin{gather*}
+  0 = 126 - 2Q_{A} - Q_{B} \ \ \ \ \ \ (1)
+\end{gather*}
+B's profit has not changed so:
+\begin{gather*}
+  0 = 120 - 2Q_{B} - Q_{A} \ \ \ \  \ \ \ (2)
+\end{gather*}
+Setting (1) = (2) to yield:
+\begin{gather*}
+  126 - 2Q_{A} - Q_{B} = 120 - 2 Q_{B}  - Q_{A} \\
+  6 - Q_{A} = - Q_{B} \\
+  Q_{B} = Q_{A} - 6 \ \ \ \ \ \ \ (*)
+\end{gather*}
+Substitution equation (*) into (1) to get the following:
+\begin{gather*}
+  0 = 126 - 2Q_{A} - Q_{A} + 6 \\
+  3Q_{A} = 132
+  \therefore Q_{A} = 44 \\
+  Q_{B} = 38 \\
+  P = 130 - 38 - 44 = 48 \\
+  \pi_{A} = (P - MC) Q_{A} = (48-4)44 = 1936 \\
+  \pi_{B} = (P - MC)Q_{B} = (48-10)44 = 1444 \\
+  \Delta Revenue EU = 0 - 44 \cdot 6 = -264 \\
+  \Delta WelfareEU = \Delta \pi_{A} + \Delta Rev = (1936 - 1600) - 264 = 72 \\
+  \Delta WelfareUS = \Delta \pi_{B} = 1444 - 1600 = -156 \\
+\end{gather*}
+
+\vspace{6mm}
+\subsection{Question 3}
+
+Since B also applies the subsidy it has a symmetrical FOC with firm A so that:
+\begin{gather*}
+  0 = 126 - 2Q_{A} - Q_{B} \ \ \ \ \ \ \ (1) \\
+  0 = 126 - 2Q_{B} - Q_{A} \ \ \ \ \ \ \ (2)
+\end{gather*}
+Setting (1) = (2) we get the following:
+\begin{gather*}
+  126 - 2Q_{A} - Q_{B} = 126 - 2Q_{B} - Q_{A} \\
+  Q_{A} = Q_{B} \ \ \ \ \ \ (*)
+\end{gather*}
+Substituting (*) into (1) yields:
+\begin{gather*}
+  0 = 126 - 2Q_{A} - Q_{A} \\
+  3Q_{A} = 126 \\
+  Q_{A} = 42 \\
+  Q_{B} = 42 \\
+  P = 130 - 42 - 42 = 46 \\
+  \pi_{A} = \pi_{B} = (46-4)42 = 1764  \\
+  RevenueLossEU = RevenueLossUS = 42 \times 6 = 252 \\
+  \Delta Welfare US (rel1) = 1764 - 1600 - 252 = - 88 \\
+  \Delta Welfare EU (rel1) = 1764 - 1600 - 252 = - 88 \\
+  \Delta Welfare US (rel2) = 1764 - 1444 - 252 = 68 \\
+  \Delta Welfare EU (rel2) = 1764 - 1936 + 12 = -160
+\end{gather*}
+Note that both countries will be better off in the no subsidy case (question 1), however if we have case 2 with one subsidy then the US will retaliate with case 3
+
+
+\section{Exercise 2}
+\vspace{6mm}
+
+See Claudio's answer guide or the tutorial recording
+
+
+
+
+\end{document}

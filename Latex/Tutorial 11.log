@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.4.6)  15 MAY 2020 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.4.6)  7 JUN 2020 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**latexnotes.tex
-(./latexnotes.tex
+**"Tutorial 11.tex"
+(./Tutorial 11.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-02-25> (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -434,8 +434,8 @@ Package: ulem 2019/11/18
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count288
 \l__pdf_internal_box=\box65
-) (./latexnotes.aux)
-\openout1 = `latexnotes.aux'.
+) (./Tutorial 11.aux)
+\openout1 = `"Tutorial 11.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -518,77 +518,22 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 4
 
 LaTeX Warning: No \author given.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
-
- []
-
 [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<./Pictures/pic1.png, id=28, 285.31593pt x 245.41687pt>
-File: ./Pictures/pic1.png Graphic file (type png)
-<use ./Pictures/pic1.png>
-Package pdftex.def Info: ./Pictures/pic1.png  used on input line 111.
-(pdftex.def)             Requested size: 113.81088pt x 113.81058pt.
-<./Pictures/pic2.png, id=30, 295.85532pt x 244.66406pt>
-File: ./Pictures/pic2.png Graphic file (type png)
-<use ./Pictures/pic2.png>
-Package pdftex.def Info: ./Pictures/pic2.png  used on input line 117.
-(pdftex.def)             Requested size: 113.81209pt x 113.81241pt.
-<./Pictures/pic3.png, id=31, 399.74344pt x 261.22594pt>
-File: ./Pictures/pic3.png Graphic file (type png)
-<use ./Pictures/pic3.png>
-Package pdftex.def Info: ./Pictures/pic3.png  used on input line 122.
-(pdftex.def)             Requested size: 170.7152pt x 113.81172pt.
- [4 <./Pictures/pic1.png> <./Pictures/pic2.png>]
-<./Pictures/pic4.png, id=37, 319.94531pt x 242.40562pt>
-File: ./Pictures/pic4.png Graphic file (type png)
-<use ./Pictures/pic4.png>
-Package pdftex.def Info: ./Pictures/pic4.png  used on input line 134.
-(pdftex.def)             Requested size: 227.62654pt x 170.72583pt.
-<./Pictures/pic5.png, id=38, 248.42813pt x 233.37187pt>
-File: ./Pictures/pic5.png Graphic file (type png)
-<use ./Pictures/pic5.png>
-Package pdftex.def Info: ./Pictures/pic5.png  used on input line 139.
-(pdftex.def)             Requested size: 227.62413pt x 170.72325pt.
- [5 <./Pictures/pic3.png> <./Pictures/pic4.png>] [6 <./Pictures/pic5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--185
-
- []
-
-[7]
-<./Pictures/pic6.png, id=54, 429.85594pt x 229.60782pt>
-File: ./Pictures/pic6.png Graphic file (type png)
-<use ./Pictures/pic6.png>
-Package pdftex.def Info: ./Pictures/pic6.png  used on input line 206.
-(pdftex.def)             Requested size: 170.71935pt x 113.81212pt.
- [8 <./Pictures/pic6.png>]
-<./Pictures/pic7.png, id=59, 266.49562pt x 231.11343pt>
-File: ./Pictures/pic7.png Graphic file (type png)
-<use ./Pictures/pic7.png>
-Package pdftex.def Info: ./Pictures/pic7.png  used on input line 234.
-(pdftex.def)             Requested size: 113.81013pt x 113.8108pt.
- [9 <./Pictures/pic7.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
-
- []
-
-[10] [11] (./latexnotes.aux) ) 
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./Tutorial 11.aux) ) 
 Here is how much of TeX's memory you used:
- 15355 strings out of 480994
- 290101 string characters out of 5916033
- 531764 words of memory out of 5000000
- 30554 multiletter control sequences out of 15000+600000
- 542062 words of font info for 64 fonts, out of 8000000 for 9000
+ 15299 strings out of 480994
+ 289222 string characters out of 5916033
+ 527831 words of memory out of 5000000
+ 30503 multiletter control sequences out of 15000+600000
+ 540990 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,10n,60p,1199b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on latexnotes.pdf (11 pages, 420905 bytes).
+ 60i,9n,60p,1202b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "Tutorial 11.pdf" (4 pages, 91188 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
